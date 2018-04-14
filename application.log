@@ -1,0 +1,37 @@
+2018-04-14 18:27:00.197  INFO 3516 --- [main] c.s.SimActivationPortalApplication       : Starting SimActivationPortalApplication on Sony with PID 3516 (D:\Eclipse_MARS\workspaceNew\SimActivationPortal\target\classes started by user in D:\Eclipse_MARS\workspaceNew\SimActivationPortal)
+2018-04-14 18:27:00.200  INFO 3516 --- [main] c.s.SimActivationPortalApplication       : The following profiles are active: dev
+2018-04-14 18:27:00.282  INFO 3516 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40b76e: startup date [Sat Apr 14 18:27:00 IST 2018]; root of context hierarchy
+2018-04-14 18:27:01.966  INFO 3516 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8938472] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-14 18:27:02.845  INFO 3516 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 4343 (http)
+2018-04-14 18:27:02.916  INFO 3516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-14 18:27:02.917  INFO 3516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-04-14 18:27:03.090  INFO 3516 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/SimActivationPortal]     : Initializing Spring embedded WebApplicationContext
+2018-04-14 18:27:03.090  INFO 3516 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2811 ms
+2018-04-14 18:27:03.510  INFO 3516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-04-14 18:27:03.510  INFO 3516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-14 18:27:03.510  INFO 3516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-14 18:27:03.510  INFO 3516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-14 18:27:03.511  INFO 3516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-14 18:27:03.512  INFO 3516 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-04-14 18:27:03.512  INFO 3516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-04-14 18:27:03.512  INFO 3516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-04-14 18:27:03.512  INFO 3516 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-14 18:27:03.626  WARN 3516 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "dev" are currently active).
+2018-04-14 18:27:03.632  INFO 3516 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-04-14 18:27:03.692  INFO 3516 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-04-14 18:27:03.697 ERROR 3516 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (the profiles "dev" are currently active).
+

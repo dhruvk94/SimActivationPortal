@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link
+	href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i'
+	rel='stylesheet' type='text/css'/>
+
+<meta charset="ISO-8859-1"/>
+<script src="js/simhome.js"></script>
+
+<link rel="stylesheet" href="css/sim_custom.css"/>
+
+<title>InfyTel</title>
+</head>
+<body>
+
+	<div id="snackbar">Error</div>
+
+	<header id="header">
+		<nav class="navbar navbar-light bg-faded navbar-fixed-top">
+
+			<div class="container-fluid" id="cont2">
+				<b>
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed"
+							data-toggle="collapse" data-target="#st-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+						<!-- a class="logo1" style="background-color: white" href="ARS.html"><img
+						src="travel/logo.PNG" alt=""></a-->
+						<a class="navbar-brand" href="">InfyTel</a>
+					</div>
+					<div class="collapse navbar-collapse" id="st-navbar-collapse">
+						<div class="">
+							<ul class="nav navbar-nav navbar-right">
+
+								<li><a href="">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Prepaid Plans</a></li>
+								<li><a href="#">Find a Retailer</a></li>
+
+								<li class="dropdown"><a href="#" class="dropdown-toggle"
+									data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false">More<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Special Offers</a></li>
+									</ul></li>
+								<li><a href="#contact" id="contid">Help</a></li>
+
+							</ul>
+						</div>
+
+					</div>
+				</b>
+			</div>
+			<!-- /.navbar-collapse -->
+
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row" style="color: white; background-color: #337ab7;">
+				<h6 id='redhd'>Creating new user</h6>
+			</div>
+			<div class="row">
+				<div class="col-sm-5" style="border: 1px">
+					<h1>Welcome to InfyTel</h1>
+					<h4>India's Favourite Network.</h4>
+					<h5>InfyTel is the first company to have an automated online
+						verification process. Follow the steps to continue and activate
+						your SIM.</h5>
+					<br/> <br/>
+					<h5>Explore our special offers for new users to get more
+						benefits at lower costs.</h5>
+					<br/> <br/>
+					
+					
+					<!-- h5>
+						Tip for testing:<br> Use SIM Number : 9999999999999 Service
+						Number : 9999999999 Email ID : a@b.c DOB : 12-12-1990 First Name :
+						Mihir Last Name : Khandekar Aadhaar ID : 12345
+					</h5-->
+				</div>
+				<div class="col-sm-7">
+					<div id="carousel-example-generic" class="carousel slide"
+						data-ride="carousel" data-interval="false">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" class="active"></li>
+							<li data-target="#carousel-example-generic"></li>
+							<li data-target="#carousel-example-generic"></li>
+							<li data-target="#carousel-example-generic"></li>
+							<li data-target="#carousel-example-generic"></li>
+							<li data-target="#carousel-example-generic"></li>
+							<li data-target="#carousel-example-generic"></li>
+							<li data-target="#carousel-example-generic"></li>
+							<li data-target="#carousel-example-generic"></li>
+
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<h1>Thank you for purchasing a InfyTel SIM card.</h1>
+								<h2>Let's get connected.</h2>
+
+								<br/>
+								<h3>Please keep your SIM kit and identification documents
+									ready.</h3>
+								<button type="button" class="btn btn-danger"
+									onclick=" $('#carousel-example-generic').carousel('next');">Get
+									Connected</button>
+
+							</div>
+
+							<div class="item">
+								<h1>Your service details</h1>
+								<form action="javascript:void(0);">
+									<div class="form-group">
+										<label for="simNum1">SIM Number</label> <input type="text"
+											value="" class="form-control" id="simNum1"
+											placeholder="SIM Number" pattern="[0-9]{13}" required="true"/>
+									</div>
+									<div class="form-group">
+										<label for="servNum1">Service Number</label> <input value=""
+											type="text" class="form-control" id="servNum1"
+											placeholder="Service Number"  pattern="[0-9]{10}" required="true"/>
+									</div>
+
+									<button type="submit" id="pg1btn" class="btn btn-danger">Next</button>
+								</form>
+							</div>
+
+							<div class="item">
+								<h1>Your offer details</h1>
+								<h2>Special offer</h2>
+								<h4 id="offer">No offers available currently</h4>
+								<button type="button" class="btn btn-danger" id="offbtn">Next</button>
+
+							</div>
+
+							<div class="item">
+								<h1>Basic User Validation</h1>
+								<form action="javascript:void(0);">
+									<div class="form-group">
+										<label for="email1">Email</label> <input type="email"
+											class="form-control" id="email1" placeholder="email ID"
+											required="true"/>
+									</div>
+									<div class="form-group">
+										<label for="dob1">Date of Birth</label> <input type="date"
+											class="form-control" id="dob1" placeholder="Date of Birth"
+											required="true"/>
+									</div>
+									<div class="form-group">
+										<label for="terms1"></label> <input type="checkbox"
+											name="terms" id="terms1" onchange="activateButton1(this)"/>
+										The information provided by me is true to my belief.
+
+									</div>
+
+
+									<button id="basicbtn" type="submit" class="btn btn-danger"
+										disabled="true">Next</button>
+								</form>
+							</div>
+							<div class="item">
+								<h1>Customer Personal Details</h1>
+								<form action="javascript:void(0);">
+									<div class="form-group">
+										<label for="title1">Title</label> <select class="form-control"
+											id="title1">
+											<option>Mr.</option>
+											<option>Mrs.</option>
+											<option>Ms.</option>
+											<option>Dr.</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="fname1">First Name</label> <input type="text"
+											class="form-control" id="fname1" placeholder="First Name"
+											required="true"/>
+									</div>
+									<div class="form-group">
+										<label for="lname1">Last Name</label> <input type="text"
+											class="form-control" id="lname1" placeholder="Last Name"
+											required="true"/>
+									</div>
+									<div class="form-group">
+										<label for="email2">Email</label> <input type="email"
+											class="form-control" id="email2" placeholder="email ID"
+											value="abc@def.com" readonly="true" required="true"/>
+									</div>
+									<div class="form-group">
+										<label for="dob2">Date of Birth</label> <input type="date"
+											class="form-control" id="dob2" placeholder="Date of Birth"
+											value="2017-12-12" readonly="true" required="true"/>
+									</div>
+									<div class="form-group">
+										<label for="cfemail2">Confirm Email</label> <input
+											type="email" class="form-control" id="cemail2"
+											placeholder="Confirm email ID" value="" required="true"/>
+									</div>
+
+									<button id="persbtn" type="submit" class="btn btn-danger">Next</button>
+								</form>
+							</div>
+							<div class="item">
+								<h1>Customer Address Details</h1>
+								<form action="javascript:void(0);">
+									<div class="form-group">
+										<label for="add1">Address</label> <input type="text" rows="5"
+											class="form-control" id="add1" placeholder="Address"
+											pattern="{0,125}" required="true"/>
+									</div>
+									<div class="form-group">
+										<label for="pin1">Pin code</label> <input type="number"
+											pattern="[0-9]{6}" class="form-control" id="pin11"
+											placeholder="Pin Code" required="true"/>
+									</div>
+
+									<div class="form-group">
+										<label for="state1">State</label> <select class="form-control"
+											id="title1">
+											<option value="Andaman and Nicobar Islands">Andaman
+												and Nicobar Islands</option>
+											<option value="Andhra Pradesh">Andhra Pradesh</option>
+											<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+											<option value="Assam">Assam</option>
+											<option value="Bihar">Bihar</option>
+											<option value="Chandigarh">Chandigarh</option>
+											<option value="Chhattisgarh">Chhattisgarh</option>
+											<option value="Dadra and Nagar Haveli">Dadra and
+												Nagar Haveli</option>
+											<option value="Daman and Diu">Daman and Diu</option>
+											<option value="Delhi">Delhi</option>
+											<option value="Goa">Goa</option>
+											<option value="Gujarat">Gujarat</option>
+											<option value="Haryana">Haryana</option>
+											<option value="Himachal Pradesh">Himachal Pradesh</option>
+											<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+											<option value="Jharkhand">Jharkhand</option>
+											<option value="Karnataka">Karnataka</option>
+											<option value="Kerala">Kerala</option>
+											<option value="Lakshadweep">Lakshadweep</option>
+											<option value="Madhya Pradesh">Madhya Pradesh</option>
+											<option value="Maharashtra">Maharashtra</option>
+											<option value="Manipur">Manipur</option>
+											<option value="Meghalaya">Meghalaya</option>
+											<option value="Mizoram">Mizoram</option>
+											<option value="Nagaland">Nagaland</option>
+											<option value="Orissa">Orissa</option>
+											<option value="Pondicherry">Pondicherry</option>
+											<option value="Punjab">Punjab</option>
+											<option value="Rajasthan">Rajasthan</option>
+											<option value="Sikkim">Sikkim</option>
+											<option value="Tamil Nadu">Tamil Nadu</option>
+											<option value="Tripura">Tripura</option>
+											<option value="Uttaranchal">Uttaranchal</option>
+											<option value="Uttar Pradesh">Uttar Pradesh</option>
+											<option value="West Bengal">West Bengal</option>
+
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="city1">City</label> <input type="text"
+											class="form-control" id="city1" placeholder="City" required="true"/>
+									</div>
+
+									<button id="addrbtn" type="submit" class="btn btn-danger">Next</button>
+								</form>
+							</div>
+							<div class="item">
+								<h1>ID Proof Validation</h1>
+								<form action="javascript:void(0);">
+									<div class="form-group">
+										<label for="id1">ID Type</label> <input type="text"
+											class="form-control" id="id1" placeholder="ID"
+											value="Aadhaar" required="true" readonly="true"/>
+									</div>
+									<div class="form-group">
+										<label for="state2">State</label><select class="form-control"
+											id="state2">
+											<option value="Andaman and Nicobar Islands">Andaman
+												and Nicobar Islands</option>
+											<option value="Andhra Pradesh">Andhra Pradesh</option>
+											<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+											<option value="Assam">Assam</option>
+											<option value="Bihar">Bihar</option>
+											<option value="Chandigarh">Chandigarh</option>
+											<option value="Chhattisgarh">Chhattisgarh</option>
+											<option value="Dadra and Nagar Haveli">Dadra and
+												Nagar Haveli</option>
+											<option value="Daman and Diu">Daman and Diu</option>
+											<option value="Delhi">Delhi</option>
+											<option value="Goa">Goa</option>
+											<option value="Gujarat">Gujarat</option>
+											<option value="Haryana">Haryana</option>
+											<option value="Himachal Pradesh">Himachal Pradesh</option>
+											<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+											<option value="Jharkhand">Jharkhand</option>
+											<option value="Karnataka">Karnataka</option>
+											<option value="Kerala">Kerala</option>
+											<option value="Lakshadweep">Lakshadweep</option>
+											<option value="Madhya Pradesh">Madhya Pradesh</option>
+											<option value="Maharashtra">Maharashtra</option>
+											<option value="Manipur">Manipur</option>
+											<option value="Meghalaya">Meghalaya</option>
+											<option value="Mizoram">Mizoram</option>
+											<option value="Nagaland">Nagaland</option>
+											<option value="Orissa">Orissa</option>
+											<option value="Pondicherry">Pondicherry</option>
+											<option value="Punjab">Punjab</option>
+											<option value="Rajasthan">Rajasthan</option>
+											<option value="Sikkim">Sikkim</option>
+											<option value="Tamil Nadu">Tamil Nadu</option>
+											<option value="Tripura">Tripura</option>
+											<option value="Uttaranchal">Uttaranchal</option>
+											<option value="Uttar Pradesh">Uttar Pradesh</option>
+											<option value="West Bengal">West Bengal</option>
+
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="idn1">ID Number</label> <input type="text"
+											class="form-control" id="idn1" placeholder="ID" required="true"/>
+									</div>
+
+									<div class="form-group">
+										<label for="fname2">First Name</label> <input type="text"
+											class="form-control" id="fname2" placeholder="First Name"
+											required="true"/>
+									</div>
+
+									<div class="form-group">
+										<label for="lname2">Last Name</label> <input type="text"
+											class="form-control" id="lname2" placeholder="Last Name"
+											required="true"/>
+									</div>
+									<div class="form-group">
+										<label for="dob3">Date of Birth</label> <input type="date"
+											class="form-control" id="dob3" placeholder="Date of Birth"
+											value="1990-12-12" required="true"/>
+									</div>
+									<button id="idbtn" type="submit" class="btn btn-danger">Next</button>
+								</form>
+							</div>
+							<div class="item">
+								<h1>Success</h1>
+								<h2></h2>
+								<h4 id="act1">Confirmation</h4>
+								<div class="table-responsive">
+									<table class="table table-condensed">
+										<tbody>
+											<tr>
+												<td>First Name</td>
+												<td id="ffname">Doe</td>
+											</tr>
+											<tr>
+												<td>Last Name</td>
+												<td id="flname">Moe</td>
+											</tr>
+											<tr>
+												<td>Email</td>
+												<td id="femail">a@b.c</td>
+											</tr>
+											<tr>
+												<td>Date of Birth</td>
+												<td id="fdob"></td>
+											</tr>
+											<tr>
+												<td>Offer</td>
+												<td id="foffer"></td>
+											</tr>
+											<tr>
+												<td>Service Number</td>
+												<td id="fservice"></td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<label for="terms2"></label> <input type="checkbox" name="terms"
+									id="terms2" onchange="activateButton2(this)"/> I agree
+								to the terms and conditions.
+
+								<button id="termsbtn" type="button" class="btn btn-danger"
+									disabled="true">Next</button>
+							</div>
+
+							<div class="item">
+								<h1>Thank you for purchasing a InfyTel SIM card.</h1>
+								<br/>
+								<h3>We will be in touch with you. Your SIM will be
+									activated in the next 2 hours.</h3>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</header>
+
+</body>
+</html>
